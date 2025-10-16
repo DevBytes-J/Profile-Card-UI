@@ -47,7 +47,13 @@ Each visible element includes a **`data-testid`** attribute, making this compone
 
 ```html
 <img data-testid="test-user-avatar" src="..." alt="User Avatar" />
-
-### Author **Joanna Bassey** Frontend Developer passionate about clean UI and
-accessible design. > "Build interfaces that look good and feel even better."
 ```
+
+
+
+### Author 
+**Joanna Bassey** 
+Frontend Developer passionate about clean UI and
+accessible design. 
+ "Build interfaces that look good and feel even better."
+
