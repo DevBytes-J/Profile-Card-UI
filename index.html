@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card | JoannaB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <header class="profile-card-main" data-testid="profile-card-header">
+        <h3 data-testid="profile-card-title">Profile Card</h3>
+        <a
+          href="https://hng.tech/"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid="profile-card-github-link"
+        >
+          <img
+            src="/images/icon.png"
+            alt="Visit GitHub profile"
+            class="icon-image"
+            data-testid="profile-card-icon"
+          />
+        </a>
+      </header>
+      <div class="border-line"></div>
+      <article class="profile-card" data-testid="test-profile-card">
+        <header class="profile-header">
+          <img src="images/code.png" alt="coding" class="profile-background" />
+
+          <div class="avatar-upload-label" title="Change Avatar">
+            <figure class="profile-picture-container">
+              <img
+                src="images/profileP.png"
+                alt="Portrait of Joanna Bassey"
+                data-testid="test-user-avatar"
+                class="profile-picture"
+              />
+            </figure>
+
+            <div class="avatar-edit-icon">
+              <i class="fas fa-camera"></i>
+            </div>
+
+            <input
+              type="file"
+              id="avatar-upload"
+              accept="image/*"
+              style="display: none"
+              onchange="changeAvatar(this)"
+            />
+          </div>
+        </header>
+
+        <section class="profile-info-container">
+          <div class="profile-info">
+            <h2 data-testid="test-user-name">Joanna Bassey</h2>
+            <p class="current-time" data-testid="test-user-time"></p>
+            <p data-testid="test-user-bio" class="user-bio">
+              Architecting elegant, responsive web experiences and bringing
+              designs to life with <b>HTML</b>, <b>CSS</b>, <b>Tailwind</b>,
+              <b>JavaScript</b>, <b>React</b>, and <b>TypeScript</b>.
+            </p>
+          </div>
+
+          <nav
+            aria-label="Social links"
+            data-testid="test-user-social-links"
+            class="user-social-links"
+          >
+            <ul>
+              <li>
+                <a
+                  href="https://x.com/Bassey_Joanna"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                  title="Twitter"
+                >
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/DevBytes-J"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                  title="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/joanna-bassey"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                  title="LinkedIn"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="interests-section">
+            <section class="interest-box" aria-labelledby="hobbies-heading">
+              <h3 id="hobbies-heading"><i class="fas fa-heart"></i> Hobbies</h3>
+              <ul data-testid="test-user-hobbies">
+                <li>Coding</li>
+                <li>Designing</li>
+                <li>Watching anime</li>
+              </ul>
+            </section>
+
+            <section class="interest-box" aria-labelledby="dislikes-heading">
+              <h3 id="dislikes-heading">
+                <i class="fas fa-times-circle"></i> Dislikes
+              </h3>
+              <ul data-testid="test-user-dislikes">
+                <li>Slow Wi-Fi</li>
+                <li>Unclean code</li>
+                <li>Cluttered UIs</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
