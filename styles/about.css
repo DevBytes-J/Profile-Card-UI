@@ -394,7 +394,7 @@ main[data-testid="test-about-page"] {
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -32px;
+  left: -36px;
   top: 5px;
   width: 14px;
   height: 14px;
