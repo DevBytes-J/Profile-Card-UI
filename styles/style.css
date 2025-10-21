@@ -17,7 +17,7 @@ body {
 }
 
 .profile-card-main a {
-  width: 40px; 
+  width: 40px;
   height: 40px;
   flex-shrink: 0;
 }
@@ -45,6 +45,7 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 0.6s ease;
+  margin-bottom: 50px;
 }
 
 @keyframes fadeIn {
@@ -103,8 +104,8 @@ body {
   overflow: hidden;
   border: 6px solid white;
 }
-.profile-picture{
-    width: 100%;
+.profile-picture {
+  width: 100%;
 }
 .avatar-edit-icon {
   position: absolute;
@@ -123,7 +124,6 @@ body {
   cursor: pointer;
   transition: transform 0.2s ease, background 0.3s ease;
 }
-
 
 .avatar-upload-label:hover .avatar-edit-icon {
   background: #333;
@@ -287,6 +287,33 @@ body {
   color: white;
 }
 
+.page-navigation {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.page-navigation a {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #00bcd4 0%, #009688 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-navigation a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4);
+}
 
 @media (max-width: 480px) {
   .profile-card {

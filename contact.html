@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | JoannaB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="nav-links">
+        <a href="index.html"><i class="fas fa-user"></i> Profile</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About Me</a>
+      </nav>
+
+      <section class="hero-section">
+        <h1>Let's Connect!</h1>
+        <p class="subtitle">
+          I'm here to help! Whether you have a question about my services,
+          pricing, or anything else, feel free to reach out. I look forward to
+          connecting with you!
+        </p>
+      </section>
+
+      <div class="contact-grid">
+        <!-- Left side -->
+        <div class="contact-info-card">
+          <h2><i class="fas fa-address-book"></i> Contact Information</h2>
+
+          <div class="info-item">
+            <div class="info-label">Email Address</div>
+            <div class="info-value">
+              <i class="fas fa-envelope"></i> joannabassey19@gmail.com
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-label">Phone Number</div>
+            <div class="info-value">
+              <i class="fas fa-phone"></i> +234 70 8011 2687
+            </div>
+            <div class="availability">
+              <i class="fas fa-clock"></i> Available Monday to Friday, 9 AM - 6
+              PM WAT
+            </div>
+          </div>
+
+          <div class="quick-stats">
+            <div class="stat-box">
+              <div class="stat-number">&lt;24h</div>
+              <div class="stat-label">Response Time</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Satisfaction</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Available</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="form-card">
+          <h2><i class="fas fa-paper-plane"></i> Send Me a Message</h2>
+
+          <div class="success-message" data-testid="test-contact-success">
+            <i class="fas fa-check-circle"></i>
+            <span>Thank you! Your message has been sent successfully.</span>
+          </div>
+
+          <form action="https://formspree.io/f/mjkadear" method="POST">
+            <input
+              type="hidden"
+              name="_replyto"
+              value="joannabassey19@gmail.com"
+            />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName"
+                  >First Name <span class="required">*</span></label
+                >
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="Enter your first name..."
+                  data-testid="test-contact-name"
+                  aria-describedby="error-name"
+                  required
+                />
+                <div
+                  class="error-message"
+                  id="error-name"
+                  data-testid="test-contact-error-name"
+                >
+                  <i class="fas fa-exclamation-circle"></i>
+                  <span>Please enter your first name</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Enter your last name..."
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address..."
+                data-testid="test-contact-email"
+                aria-describedby="error-email"
+                required
+              />
+              <div
+                class="error-message"
+                id="error-email"
+                data-testid="test-contact-error-email"
+              >
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Please enter a valid email address</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject"
+                >Subject <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What's this about..."
+                data-testid="test-contact-subject"
+                aria-describedby="error-subject"
+                required
+              />
+              <div
+                class="error-message"
+                id="error-subject"
+                data-testid="test-contact-error-subject"
+              >
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Please enter a subject</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message"
+                >How can I help you? <span class="required">*</span></label
+              >
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message..."
+                data-testid="test-contact-message"
+                aria-describedby="error-message"
+                required
+              ></textarea>
+              <div
+                class="error-message"
+                id="error-message"
+                data-testid="test-contact-error-message"
+              >
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Message must be at least 10 characters</span>
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="submit-button"
+              data-testid="test-contact-submit"
+            >
+              Send Message <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/contact.js"></script>
+  </body>
+</html>
