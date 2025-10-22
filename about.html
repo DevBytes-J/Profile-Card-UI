@@ -1,175 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me | Joanna Bassey</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-  />
-  <link rel="stylesheet" href="styles/about.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Joanna Bassey</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/about.css" />
+  </head>
 
-<body>
-  <div class="container">
-    <nav class="nav-links">
-      <a href="index.html">
-        <i class="fas fa-user"></i> Profile
-      </a>
-      <a href="contact.html">
-        <i class="fas fa-envelope"></i> Contact
-      </a>
-    </nav>
+  <body>
+    <div class="container">
+      <nav class="nav-links">
+        <a href="index.html"> <i class="fas fa-user"></i> Profile </a>
+        <a href="contact.html"> <i class="fas fa-envelope"></i> Contact </a>
+      </nav>
 
-    <main data-testid="test-about-page">
-      <section class="hero-section">
-        <h1>About Joanna Bassey</h1>
-        <p class="subtitle">
-          Frontend engineer & designer — crafting thoughtful, accessible
-          interfaces and learning every day. Welcome to my journey!
-        </p>
-      </section>
+      <main data-testid="test-about-page">
+        <section class="hero-section">
+          <h1>About Joanna Bassey</h1>
+          <p class="subtitle">
+            Frontend engineer & designer — crafting thoughtful, accessible
+            interfaces and learning every day. Welcome to my journey!
+          </p>
+        </section>
 
-      <section class="tabs-container">
-        <button class="tab-button active" data-tab="overview">
-          <i class="fas fa-home"></i> Overview
-        </button>
-        <button class="tab-button" data-tab="journey">
-          <i class="fas fa-rocket"></i> My Journey
-        </button>
-        <button class="tab-button" data-tab="goals">
-          <i class="fas fa-bullseye"></i> Goals & Growth
-        </button>
-        <button class="tab-button" data-tab="reflection">
-          <i class="fas fa-pencil-alt"></i> Reflection
-        </button>
-      </section>
+        <section class="tabs-container">
+          <button class="tab-button active" data-tab="overview">
+            <i class="fas fa-home"></i> Overview
+          </button>
+          <button class="tab-button" data-tab="journey">
+            <i class="fas fa-rocket"></i> My Journey
+          </button>
+          <button class="tab-button" data-tab="goals">
+            <i class="fas fa-bullseye"></i> Goals & Growth
+          </button>
+          <button class="tab-button" data-tab="reflection">
+            <i class="fas fa-pencil-alt"></i> Reflection
+          </button>
+        </section>
 
-      <!-- Overview Tab -->
-      <section class="tab-content active" data-content="overview">
-        <div class="cards-grid">
-          <div class="card">
-            <h2><i class="fas fa-user-circle"></i> Bio</h2>
-            <p data-testid="test-about-bio">
-              Hiii — I'm Joanna aka <b>DevBytes</b>. I build beautiful, accessible user interfaces with
-              HTML, CSS and JavaScript, and enjoy turning design ideas into
-              delightful experiences. I care deeply about readability, mobile
-              performance, and inclusive UX. Outside of code, you'll find me
-              sketching UI ideas or watching anime/movies for creative inspiration.
-            </p>
-          </div>
+        <!-- Overview Tab -->
+        <section class="tab-content active" data-content="overview">
+          <section class="cards-grid">
+            <section class="card">
+              <h2><i class="fas fa-user-circle"></i> Bio</h2>
+              <p data-testid="test-about-bio">
+                Hi — I'm Joanna. I build beautiful, accessible user interfaces
+                with HTML, CSS and JavaScript, and enjoy turning design ideas
+                into delightful experiences. I care deeply about readability,
+                mobile performance, and inclusive UX. Outside of code, you'll
+                find me sketching UI ideas or watching anime for creative
+                inspiration.
+              </p>
+            </section>
 
-          <div class="card">
-            <h2><i class="fas fa-heart"></i> What I Love</h2>
-            <ul>
-              <li>Creating pixel-perfect designs</li>
-              <li>Solving complex UI challenges</li>
-              <li>Learning new technologies</li>
-              <li>Building accessible experiences</li>
-            </ul>
-          </div>
-        </div>
+            <section class="card">
+              <h2><i class="fas fa-heart"></i> What I Love</h2>
+              <ul>
+                <li>Creating pixel-perfect designs</li>
+                <li>Solving complex UI challenges</li>
+                <li>Learning new technologies</li>
+                <li>Building accessible experiences</li>
+              </ul>
+            </section>
+          </section>
 
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number" data-count="40">0</div>
-            <div class="stat-label">Projects Completed</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" data-count="300">0</div>
-            <div class="stat-label">Hours of Coding</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" data-count="7">0</div>
-            <div class="stat-label">Technologies Mastered</div>
-          </div>
-        </div>
-      </section>
+          <section class="stats-grid">
+            <section class="stat-card">
+              <div class="stat-number" data-count="50">0</div>
+              <div class="stat-label">Projects Completed</div>
+            </section>
+            <section class="stat-card">
+              <div class="stat-number" data-count="100">0</div>
+              <div class="stat-label">Hours of Coding</div>
+            </section>
+            <section class="stat-card">
+              <div class="stat-number" data-count="10">0</div>
+              <div class="stat-label">Technologies Mastered</div>
+            </section>
+          </section>
+        </section>
 
-      <!-- Journey Tab -->
-      <section class="tab-content" data-content="journey">
-        <div class="card">
-          <h2><i class="fas fa-road"></i> My Development Journey</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <h3>Started with HTML & CSS</h3>
-              <p>Fell in love with creating beautiful layouts and bringing designs to life.</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Learned JavaScript</h3>
-              <p>Discovered the power of interactivity and dynamic user experiences.</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Mastered React</h3>
-              <p>Built component-driven applications and learned modern frontend patterns.</p>
-            </div>
-            <div class="timeline-item">
-              <h3>Exploring TypeScript</h3>
-              <p>Currently leveling up with type-safe code and scalable architectures.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <!-- Journey Tab -->
+        <section class="tab-content" data-content="journey">
+          <section class="card">
+            <h2><i class="fas fa-road"></i> My Development Journey</h2>
+            <section class="timeline">
+              <section class="timeline-item">
+                <h3>Started with HTML & CSS</h3>
+                <p>
+                  Fell in love with creating beautiful layouts and bringing
+                  designs to life.
+                </p>
+              </section>
+              <section class="timeline-item">
+                <h3>Learned JavaScript</h3>
+                <p>
+                  Discovered the power of interactivity and dynamic user
+                  experiences.
+                </p>
+              </section>
+              <section class="timeline-item">
+                <h3>Mastered React</h3>
+                <p>
+                  Built component-driven applications and learned modern
+                  frontend patterns.
+                </p>
+              </section>
+              <section class="timeline-item">
+                <h3>Exploring TypeScript</h3>
+                <p>
+                  Currently leveling up with type-safe code and scalable
+                  architectures.
+                </p>
+              </section>
+            </section>
+          </section>
+        </section>
 
-      <!-- Goals Tab -->
-      <section class="tab-content" data-content="goals">
-        <div class="cards-grid">
-          <div class="card">
-            <h2><i class="fas fa-bullseye"></i> Goals in this Program</h2>
-            <ul data-testid="test-about-goals">
-              <li>Sharpen component-driven UI skills and accessibility best practices</li>
-              <li>Ship polished projects demonstrating responsive design & testing</li>
-              <li>Learn advanced JS patterns and state management</li>
-              <li>Contribute to open-source UX improvements</li>
-            </ul>
-          </div>
+        <!-- Goals Tab -->
+        <section class="tab-content" data-content="goals">
+          <section class="cards-grid">
+            <section class="card">
+              <h2><i class="fas fa-bullseye"></i> Goals in this Program</h2>
+              <ul data-testid="test-about-goals">
+                <li>
+                  Sharpen component-driven UI skills and accessibility best
+                  practices
+                </li>
+                <li>
+                  Ship polished projects demonstrating responsive design &
+                  testing
+                </li>
+                <li>Learn advanced JS patterns and state management</li>
+                <li>Contribute to open-source UX improvements</li>
+              </ul>
+            </section>
 
-          <div class="card">
-            <h2><i class="fas fa-chart-line"></i> Areas of Low Confidence</h2>
-            <p data-testid="test-about-confidence">
-              I'm actively improving on these areas:
-            </p>
-            <ul>
-              <li>Deep backend integration (APIs and auth flows)</li>
-              <li>Advanced performance tuning (critical rendering path)</li>
-              <li>TypeScript adoption in large codebases</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+            <section class="card">
+              <h2><i class="fas fa-chart-line"></i> Areas of Low Confidence</h2>
+              <p data-testid="test-about-confidence">
+                I'm actively improving on these areas:
+              </p>
+              <ul>
+                <li>Deep backend integration (APIs and auth flows)</li>
+                <li>Advanced performance tuning (critical rendering path)</li>
+                <li>TypeScript adoption in large codebases</li>
+              </ul>
+            </section>
+          </section>
+        </section>
 
-      <!-- Reflection Tab -->
-      <section class="tab-content" data-content="reflection">
-        <div class="note-card">
-          <h2><i class="fas fa-envelope-open-text"></i> Note to My Future Self</h2>
-          <textarea
-            class="note-textarea"
-            data-testid="test-about-future-note"
-            placeholder="Write a note to your future self... What are you learning today? What challenges are you facing? What are you proud of?"
-          ></textarea>
-          <div class="note-controls">
-            <div class="note-info">
-              <i class="fas fa-info-circle"></i> Saved automatically in your browser
-              <span class="word-count"></span>
-            </div>
-            <div class="note-buttons">
-              <button class="btn btn-primary save-btn">
-                <i class="fas fa-save"></i> Save Note
+        <!-- Reflection Tab -->
+        <section class="tab-content" data-content="reflection">
+          <section class="note-card">
+            <h2>
+              <i class="fas fa-envelope-open-text"></i> Note to My Future Self
+            </h2>
+            <textarea
+              class="note-textarea"
+              data-testid="test-about-future-note"
+              placeholder="Write a note to your future self... What are you learning today? What challenges are you facing? What are you proud of?"
+            ></textarea>
+            <section class="note-controls">
+              <section class="note-info">
+                <i class="fas fa-info-circle"></i> Saved automatically in your
+                browser
+                <span class="word-count"></span>
+              </section>
+              <section class="note-buttons">
+                <button class="btn btn-primary save-btn">
+                  <i class="fas fa-save"></i> Save Note
+                </button>
+                <button class="btn btn-secondary clear-btn">
+                  <i class="fas fa-trash"></i> Clear
+                </button>
+              </section>
+            </section>
+          </section>
+
+          <section class="extra-thoughts-section">
+            <section class="extra-header">
+              <h2>
+                <i class="fas fa-lightbulb"></i>
+                Extra Thoughts
+              </h2>
+              <button class="expand-btn" id="expandBtn">
+                <i class="fas fa-chevron-down"></i>
               </button>
-              <button class="btn btn-secondary clear-btn">
-                <i class="fas fa-trash"></i> Clear
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
+            </section>
 
-  <script src="scripts/about.js"></script>
-</body>
+            <section class="extra-content" id="extraContent">
+              <section class="thought-highlight">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="highlight-text" data-testid="test-about-extra">
+                  Great frontend development is about more than just writing
+                  code—it's about creating experiences that are intuitive,
+                  accessible, and delightful for all users.
+                </p>
+              </section>
+
+              <section class="passion-cards">
+                <section class="passion-card">
+                  <div class="passion-icon">
+                    <i class="fas fa-universal-access"></i>
+                  </div>
+                  <h3>Web Accessibility</h3>
+                  <p>
+                    Being passionate about ensuring interfaces can be used by
+                    everyone, regardless of their abilities.
+                  </p>
+                </section>
+
+                <section class="passion-card">
+                  <div class="passion-icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <h3>Community Learning</h3>
+                  <p>
+                    Excited to be part of a community of learners who share the
+                    passion for creating amazing user experiences.
+                  </p>
+                </section>
+
+                <section class="passion-card">
+                  <div class="passion-icon">
+                    <i class="fas fa-rocket"></i>
+                  </div>
+                  <h3>Growth Mindset</h3>
+                  <p>
+                    Looking forward to challenges and opportunities that help
+                    grow as a developer.
+                  </p>
+                </section>
+              </section>
+
+              <section class="commitment-list">
+                <h3><i class="fas fa-check-circle"></i> My Commitments</h3>
+                <ul>
+                  <li>
+                    <i class="fas fa-arrow-right"></i> Build inclusive and
+                    accessible interfaces for all users
+                  </li>
+                  <li>
+                    <i class="fas fa-arrow-right"></i> Continuously learn and
+                    adapt to new technologies
+                  </li>
+                  <li>
+                    <i class="fas fa-arrow-right"></i> Create delightful user
+                    experiences that make a difference
+                  </li>
+                </ul>
+              </section>
+            </section>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="scripts/about.js"></script>
+  </body>
 </html>
-
-
-
